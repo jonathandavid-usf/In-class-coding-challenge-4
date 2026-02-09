@@ -48,14 +48,8 @@ for (const product of products) {
         case "Boat Trailers":
             discount = 0.10;
             break;
-        case "Boat Essentials":
-            discount = 0;
-            break;
-        case "Boat Requirements":
-            discount = 0;
-            break;
         default:
-            console.log("Unknown category")
+            discount = 0.0 // No discount for other categories
     }
     product.promotionalPrice = product.price * (1 - discount)
 }
